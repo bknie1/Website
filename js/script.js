@@ -7,4 +7,10 @@
       burger.classList.toggle('is-active');
       menu.classList.toggle('is-active');
     });
+    if (!burger.is.visible) {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    }
 })();
+
+// Otherwise, flip the other.
