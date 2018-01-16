@@ -15,12 +15,3 @@ function hamburger() {
     menu.classList.toggle('is-active');
   }
 }
-
-function dropdown() {
-  var projectDropdown = document.querySelectorAll('projectDropdown');
-  // var projectItems = document.querySelectorAll('projectItems');
-  // projectItems.classList.toggle('active-dropdown');
-  projectDropdown.addEventListener('mouseover', function () {
-      projectDropdown.classList.toggle('is-active');
-    });
-}
