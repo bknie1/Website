@@ -1,4 +1,4 @@
-/* Hambuger Logic */
+// Hambuger Logic
 
 (function () {
   var burger = document.querySelector('.navbar-burger');
@@ -12,5 +12,4 @@
       menu.classList.toggle('is-active');
     }
 })();
-
 // Otherwise, flip the other.

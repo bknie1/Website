@@ -1,6 +1,7 @@
 html,body {
   font-family: 'Roboto', sans-serif;
 }
+
 .hero.is-info {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -20,6 +21,10 @@ html,body {
   line-height: 1.5;
   padding: 3rem 0;
 }
+
+/* .navbar-link {
+  color: white !important;
+} */
 
 .name {
   font-size: 5.0em;
