@@ -1,13 +1,3 @@
-.basic-item:hover, .navbar-dropdown {
-  align-content: center;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  transition: all .33s;
-}
-
-.brand:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
 html,body {
   font-family: 'Roboto', sans-serif;
 }
@@ -40,20 +30,6 @@ html,body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* Override */
-.navbar-burger, .navbar-burger:hover {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  border-color: rgba(0, 0, 0, 1.0) !important;
-  color: white !important;
-  transition: all .33s;
-}
-
-.navbar-menu.is-active {
-  background-color: rgba(0, 0, 0, 0) !important;
-  transition: all .33s;
-  text-align: center;
-}
-
 .shadow {
 	color: white;
 
@@ -70,10 +46,4 @@ html,body {
 
 .title {
   font-size: 2.5em;
-}
-
-.work:hover {
-  color: white !important;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  transition: all .33s;
 }

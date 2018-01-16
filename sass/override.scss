@@ -1,0 +1,18 @@
+// Import the initial variables
+@import "../sass/utilities/initial-variables";
+@import "../sass/utilities/functions";
+
+// Set the initial variables
+$cyan: rgba(0, 0, 0, 0.5);
+$blue-invert: #fff;
+$family-serif: 'Roboto', sans-serif;
+
+// Set the derived variables
+$primary: $cyan;
+$primary-invert: $blue-invert;
+
+// Use the new serif family
+$family-primary: $family-serif;
+
+// Import the rest of Bulma
+@import "../bulma";
