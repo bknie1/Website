@@ -1,6 +1,7 @@
-burgerTime();
+hamburger();
+dropdown();
 
-function burgerTime() {
+function hamburger() {
   // Hambuger Logic
   var burger = document.querySelector('.navbar-burger');
   var menu = document.querySelector('.navbar-menu');
