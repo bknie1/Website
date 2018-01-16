@@ -3927,7 +3927,7 @@ a.dropdown-item {
   padding: 20px; }
 
 .navbar {
-  background-color: white;
+  background-color: #ff3860;
   min-height: 3.25rem;
   position: relative; }
   .navbar.is-white {
@@ -4455,7 +4455,7 @@ a.navbar-link.is-active {
     display: flex; }
 
   .navbar-menu {
-    background-color: white;
+    background-color: #ff3860;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
     .navbar-menu.is-active {
@@ -4560,7 +4560,7 @@ a.navbar-link.is-active {
     margin-left: auto; }
 
   .navbar-dropdown {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 1px solid #dbdbdb;
@@ -4590,7 +4590,7 @@ a.navbar-link.is-active {
       display: block;
       opacity: 0;
       pointer-events: none;
-      top: calc(100% + (-4px));
+      top: calc(100% + (0px));
       transform: translateY(-5px);
       transition-duration: 86ms;
       transition-property: opacity, transform; }

@@ -1,91 +1,129 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brandon Knieriem</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-  <link rel="stylesheet" href="./css/basics.css">
-  <link rel="stylesheet" href="./css/override.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandon Knieriem</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/basics.css">
+    <link rel="stylesheet" href="./css/override.css">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-</head>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+  </head>
 
-<body>
-  <!-- Home and Navbar -->
-  <id="home" section class="hero is-info is-fullheight">
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
+  <body>
+    <!-- Home and Navbar -->
+    <id="home" section="section" class="hero is-info is-fullheight">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
 
-          <!-- Brand -->
-          <div class="navbar-brand">
-            <a class="navbar-item brand" href="./index.html">
-              <img src="./resources/img/brand.png" alt="Logo">
-            </a>
-
-            <!-- Hamburger -->
-            <button class="button navbar-burger" data-target="menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-
-          <!-- Items -->
-          <div id="menu" class="navbar-menu text-center">
-            <!-- Local Items -->
-            <div class="navbar-start">
-              <a id="homeBtn" class="navbar-item basic-item" href="#home">
-                <span>Home</span>
+            <!-- Brand -->
+            <div class="navbar-brand">
+              <a class="navbar-item brand" href="./index.html">
+                <img src="./resources/img/brand.png" alt="Logo">
               </a>
-              <a id="projectsBtn" class="navbar-item basic-item" href="#projects">
-                <span>Projects</span>
-              </a>
-              <a id="contactBtn" class="navbar-item basic-item" href="#contact">
-                <span>Contact</span>
-              </a>
+
+              <!-- Hamburger -->
+              <button class="button navbar-burger" data-target="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
 
-            <!-- External Items -->
-            <div class="navbar-end">
-              <span class="work-item navbar-item">
+            <!-- Items -->
+            <div id="menu" class="navbar-menu text-center">
+              <!-- Local Items -->
+              <div class="navbar-start">
+                <a id="homeBtn" class="navbar-item basic-item" href="#home">
+                  <span>Home</span>
+                </a>
+                <div id="projectDropdown" class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                          Projects
+                        </a>
+                  <!-- Not Games -->
+                  <div id="projectItems" class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="https://github.com/bknie1/Distribution">
+                            Distribution
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/EgglishLanguageValidation">
+                            Programming Language Validation
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/Mapboard">
+                            Mapboard
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/PLC_PTL">
+                            Mortise Lock Assembly PLC
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/VirtualWallPodInstaller">
+                            Virtual WallPod WiX Installer
+                          </a>
+                    <!-- Games -->
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="https://bknie1.github.io/colorgame.html">
+                            Color Game
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/Plant-It">
+                            Plant It!
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/SpaceJack">
+                            Space Jack
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/Symmetrics">
+                            Symmetrics
+                          </a>
+                    <a class="navbar-item" href="https://github.com/bknie1/Sudoku">
+                            Sudoku
+                          </a>
+                  </div>
+                </div>
+
+                <a id="contactBtn" class="navbar-item basic-item" href="#contact">
+                  <span>Contact</span>
+                </a>
+              </div>
+
+              <!-- External Items -->
+              <div class="navbar-end">
+                <span class="work-item navbar-item">
                   <a class="work button is-white is-outlined" target="_blank" href="https://github.com/bknie1">
                     <span class="icon">
                       <i class="fa fa-github"></i>
                     </span>
-              <span>GitHub</span>
-              </a>
-              </span>
-              <span class="work-item navbar-item">
+                <span>GitHub</span>
+                </a>
+                </span>
+                <span class="work-item navbar-item">
                   <a class="work button is-white is-outlined" target="_blank" href="https://linkedin.com/in/brandonknieriem">
                     <span class="icon">
                       <i class="fa fa-linkedin"></i>
                     </span>
-              <span>LinkedIn</span>
-              </a>
-              </span>
+                <span>LinkedIn</span>
+                </a>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </div>
-
-    <!-- Content -->
-    <section class="section">
-      <div class="container">
-        <h1 class="name shadow strong">
-          brandon knieriem
-        </h1>
-        <h2 class="title shadow">
-          software engineer
-        </h2>
+        </nav>
       </div>
-    </section>
-    <script async type="text/javascript" src="./js/script.js"></script>
-</body>
+
+      <!-- Content -->
+      <section class="section">
+        <div class="container">
+          <h1 class="name shadow strong">
+            brandon knieriem
+          </h1>
+          <h2 class="title shadow">
+            software engineer
+          </h2>
+        </div>
+      </section>
+      <script async="async" type="text/javascript" src="./js/script.js"></script>
+  </body>
 
 </html>
