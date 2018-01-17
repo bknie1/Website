@@ -1,3 +1,29 @@
+.about {
+  font-size: 2.5em;
+  padding-bottom: 25%;
+  padding-top: 5%;
+}
+
+br {
+  padding: 25%;
+}
+
+.contact {
+  padding-bottom: 50%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.contact hr {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  text-align: center;
+}
+
 html,body {
   font-family: 'Roboto', sans-serif;
 }
@@ -22,6 +48,30 @@ html,body {
   padding: 3rem 0;
 }
 
+.has-dropdown .navbar-item {
+  color: white !important;
+}
+
+.has-dropdown:hover > .navbar-link {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+hr {
+	/* width: 400px; */
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, .2)
+}
+
+.interests {
+  padding-bottom: 25%;
+  padding-top: 5%;
+}
+
+.interests .fa, .contact .fa {
+	color: #FFFFFF;
+	font-size: 60px;
+}
+
 .name {
   font-size: 5.0em;
   font-weight: bold;
@@ -31,12 +81,12 @@ html,body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.has-dropdown .navbar-item {
-  color: white !important;
+.navbar-burger {
+  background-color: white !important;
 }
 
-.has-dropdown:hover > .navbar-link {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+.navbar-brand {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .navbar-link {
@@ -45,6 +95,14 @@ html,body {
 
 .navbar-link:hover, .navbar-link .is-active {
   background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.padding-bottom {
+    padding-bottom: 25%;
+}
+
+.padding-top {
+  padding-top: 25%;
 }
 
 .shadow {
@@ -58,9 +116,18 @@ html,body {
 
 .strong {
 	color: white;
-	padding-top: 25%;
+	padding-top: 50%;
+}
+
+.tile-left {
+  padding-left: 15%;
+}
+
+.tile-right {
+  padding-right: 15%;
 }
 
 .title {
   font-size: 2.5em;
+
 }
