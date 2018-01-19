@@ -10,7 +10,7 @@ br {
 
 .contact {
   padding-bottom: 50%;
-  padding-top: 5%;
+  padding-top: 20%;
   text-align: center;
 }
 
@@ -76,6 +76,11 @@ hr {
   padding: 50%;
 }
 
+.list li {
+  font-size: .5em;
+  padding-left: 0.5em;
+}
+
 .name {
   font-size: 5.0em;
   font-weight: bold;
@@ -106,6 +111,10 @@ hr {
   padding-top: 25%;
 }
 
+.roles, .skills {
+  font-size: .75em;
+}
+
 .shadow {
 	color: white;
 
@@ -129,6 +138,17 @@ hr {
 }
 
 .title {
+  color: white;
   font-size: 2.5em;
+  font-weight: bold;
+}
 
+.title-medium {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.title-small {
+  font-size: .75em;
+  font-weight: bold;
 }
