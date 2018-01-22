@@ -10,7 +10,7 @@ br {
 
 .contact {
   padding-bottom: 50%;
-  padding-top: 5%;
+  padding-top: 20%;
   text-align: center;
 }
 
@@ -20,11 +20,11 @@ br {
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
   text-align: center;
 }
 
-html,body {
+html, body {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -39,7 +39,7 @@ html,body {
   background-size: cover;
 }
 
-.hero .nav, .hero.is-success .nav {
+.hero .nav, .hero .is-success .nav {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -52,8 +52,8 @@ html,body {
   color: white !important;
 }
 
-.has-dropdown:hover > .navbar-link {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+.has-dropdown:hover .navbar-link {
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
 hr {
@@ -72,6 +72,15 @@ hr {
 	font-size: 60px;
 }
 
+.is-active {
+  padding: 50%;
+}
+
+.list li {
+  font-size: .5em;
+  padding-left: 0.5em;
+}
+
 .name {
   font-size: 5.0em;
   font-weight: bold;
@@ -85,33 +94,34 @@ hr {
   background-color: white !important;
 }
 
-.navbar-brand {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
 .navbar-link {
   color: white !important;
-}
-
-.navbar-link:hover, .navbar-link .is-active {
-  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .padding-bottom {
     padding-bottom: 25%;
 }
 
+.padded-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .padding-top {
   padding-top: 25%;
+}
+
+.roles, .skills {
+  font-size: .75em;
 }
 
 .shadow {
 	color: white;
 
 	/* offset-x | offset-y | blur-radius | color */
-	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-				 0px 8px 13px rgba(0, 0, 0, 0.1),
-				 0px 18px 23px rgba(0, 0, 0, 0.1);
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
+				 0 8px 13px rgba(0, 0, 0, 0.1),
+				 0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .strong {
@@ -119,15 +129,24 @@ hr {
 	padding-top: 50%;
 }
 
-.tile-left {
-  padding-left: 15%;
-}
-
-.tile-right {
-  padding-right: 15%;
+.tile .subtitle {
+    padding: .5rem 0;
 }
 
 .title {
+  color: white;
   font-size: 2.5em;
+  font-weight: bold;
+}
 
+.tile .title-medium {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.title-small {
+  color: white;
+  font-size: .75em;
+  font-weight: bold;
 }

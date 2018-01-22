@@ -7,6 +7,7 @@
     <title>Brandon Knieriem</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/basics.css">
     <link rel="stylesheet" href="./css/override.css">
 
@@ -15,8 +16,8 @@
   </head>
 
   <body>
-    <!-- Home and Navbar -->
-    <section="section" id="home" class="hero is-info is-fullheight">
+    <!-- Navbar -->
+    <section="section" class="hero is-info is-fullheight">
       <div class="hero-head">
         <nav class="navbar is-fixed-top">
           <div class="container">
@@ -28,87 +29,93 @@
               </a>
 
               <!-- Hamburger -->
-              <button class="button navbar-burger" data-target="menu">
-                <span></span>
-                <span></span>
-                <span></span>
+              <button class="button navbar-burger" data-target="navMenu">
+                <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </button>
             </div>
 
             <!-- Items -->
-            <div id="menu" class="navbar-menu text-center">
+            <div id="navMenu" class="navbar-menu text-center">
               <!-- Local Items -->
-              <div class="navbar-start">
-                <div id="projectDropdown" class="navbar-item has-dropdown is-hoverable">
+              <div class="navbar-start delayed">
+                <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">
-                          Projects
-                        </a>
+                    Projects
+                  </a>
                   <!-- Not Games -->
-                  <div id="projectItems" class="navbar-dropdown is-boxed">
-                    <a class="navbar-item" href="https://github.com/bknie1/Distribution">
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Distribution">
                             Distribution
                           </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/EgglishLanguageValidation">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/EgglishLanguageValidation">
                             Programming Language Validation
                           </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/Mapboard">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Mapboard">
                             Mapboard
                           </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/PLC_PTL">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/PLC_PTL">
                             Mortise Lock Assembly PLC
-                          </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/VirtualWallPodInstaller">
-                            Virtual WallPod WiX Installer
                           </a>
                     <!-- Games -->
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="https://bknie1.github.io/colorgame.html">
+                    <a class="navbar-item" target="_blank" href="https://bknie1.github.io/colorgame.html">
                             Color Game
                           </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/Plant-It">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Plant-It">
                             Plant It!
                           </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/SpaceJack">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/SpaceJack">
                             Space Jack
                           </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/Symmetrics">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Symmetrics">
                             Symmetrics
                           </a>
-                    <a class="navbar-item" href="https://github.com/bknie1/Sudoku">
+                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Sudoku">
                             Sudoku
                           </a>
                   </div>
                 </div>
-                <a id="contactBtn" class="navbar-item basic-item" href="#about">
+                <a class="navbar-item basic-item" href="#about">
                   <span>About</span>
                 </a>
-                <a id="contactBtn" class="navbar-item basic-item" href="#interests">
+                <a class="navbar-item basic-item" href="#interests">
                     <span>Interests</span>
                   </a>
-                <a id="contactBtn" class="navbar-item basic-item" href="#contact">
+                <a class="navbar-item basic-item" href="#contact">
                     <span>Contact</span>
                   </a>
               </div>
-            </div>
-
-            <!-- External Items -->
-            <div class="navbar-end">
-              <span class="work-item navbar-item">
-                  <a class="work button is-white is-outlined" target="_blank" href="https://github.com/bknie1">
-                    <span class="icon">
-                      <i class="fa fa-github"></i>
-                    </span>
-              <span>GitHub</span>
-              </a>
-              </span>
-              <span class="work-item navbar-item">
-                  <a class="work button is-white is-outlined" target="_blank" href="https://linkedin.com/in/brandonknieriem">
-                    <span class="icon">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-              <span>LinkedIn</span>
-              </a>
-              </span>
+              <!-- External Items -->
+              <div class="navbar-end">
+                <span class="work-item navbar-item">
+                    <a class="work button is-white is-outlined" target="_blank" href="https://github.com/bknie1">
+                      <span class="icon">
+                        <i class="fa fa-github"></i>
+                      </span>
+                <span>GitHub</span>
+                </a>
+                </span>
+                <span class="work-item navbar-item">
+                    <a class="work button is-white is-outlined" target="_blank" href="https://linkedin.com/in/brandonknieriem">
+                      <span class="icon">
+                        <i class="fa fa-linkedin"></i>
+                      </span>
+                <span>LinkedIn</span>
+                </a>
+                </span>
+                <span class="work-item navbar-item">
+                    <a class="work button is-white is-outlined" target="_blank" href="https://soundcloud.com/ghostlightproductions/borgeous-this-could-be-love-ghostlight-remix">
+                      <span class="icon">
+                        <i class="fa fa-soundcloud"></i>
+                      </span>
+                <span>SoundCloud</span>
+                </a>
+                </span>
+              </div>
             </div>
           </div>
         </nav>
@@ -119,138 +126,190 @@
       <section class="section">
         <div class="container">
           <h1 class="name shadow strong">
-            brandon knieriem
+            Brandon Knieriem
           </h1>
           <h2 class="title shadow padding-bottom">
-            software engineer
+            Software Engineer
           </h2>
         </div>
       </section>
       <!-- /Landing -->
 
-      <!-- About -->
-      <div id="about" class="about pad-section">
-        <div class="container">
-          <p class="title shadow text-center">About</p>
-          <hr/>
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical">
-              <div class="tile">
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child notification is-primary">
-                    <h2 class="title">Who He Is</h2>
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </article>
+      <div class="padded-content">
+        <!-- About -->
+        <div id="about" class="about pad-section">
+          <div class="container">
+            <p class="title shadow text-center">About</p>
+            <hr/>
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-primary">
+                      <h2 class="title">Who He Is</h2>
+                      <p class="subtitle">
+                        Proud member of the Oregon Trail generation, Brandon grew up in a small town in rural Connecticut. Legend goes that he fixed a "smoking computer" at 5. Exaggerated? Probably. Cool? Definitely.
+                        <br><br> He was enamored with technology at an early age. When he wasn't playing Commander Keen he tagged along to computer shows and local tech swap meets (re: piracy). Final Fantasy VII, VIII, and EverQuest inspired him to create
+                        his own games in RPG Maker.
+                        <br><br>In high school he learned Visual Basic, basic HTML, Flash, Adobe Photoshop. He also picked up digital and traditional photography. He was, and still is, an avid hobbyist musician.
+                        <br><br>He took the long way in college: First, he was an environmental engineer, then a criminologist, and finally a software engineer. Hello, World!
+                      </p>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="tile is-vertical">
               <div class="tile">
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child notification is-primary">
-                    <h2 class="title">What He Does</h2>
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </article>
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-primary">
+                      <h2 class="title">What He Does</h2>
+                      <p class="subtitle">
+                        Brandon, first and foremost, loves design. Whether it's games, web development, the user experience, or an elegant code solution, he's looking for opportunities to be creative and make users happy. He has academically programmed for about three years.
+                        <br><br>Variety is the spice of life. Developing a game and need some 3D assets prototyped in Blender? Brandon enjoys wearing multiple hats.
+                      </p>
+                    </article>
+                    <div class="tile is-ancestor">
+                      <div class="tile is-vertical">
+                        <div class="tile">
+                          <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification is-primary list roles">
+                              <h2 class="title-small">Ideal Roles</h2>
+                              <li>Game Developer</li>
+                              <li>Game Designer</li>
+                              <li>UI Developer</li>
+                              <li>VR Developer</li>
+                              <li>Front End Web Developer</li>
+                              <li>Back End .NET Developer</li>
+                              <li>Mobile Developer</li>
+                              <li>App Security Engineer</li>
+                              <li>Digital Forensic Scientist</li>
+                            </article>
+                          </div>
+                          <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification is-primary list roles">
+                              <h2 class="title-small">Tech</h2>
+                              <li>Unity, Unreal, Gamemaker</li>
+                              <li>HTC Vive, Google Daydream</li>
+                              <li>Bootstrap, Bulma, Sass</li>
+                              <li>SQL, sqlite</li>
+                              <li>HTML5, CSS3, Javascript</li>
+                              <li>C++</li>
+                              <li>C#.NET</li>
+                              <li>Java & JavaFX</li>
+                              <li>Python</li>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /About -->
+        <!-- /About -->
+        <br>
+        <br>
+        <!-- Interests -->
+        <div id="interests" class="interests">
+          <div class="container">
+            <p class="title shadow text-center">Interests</p>
+            <hr/>
 
-      <br>
-      <br>
-
-      <!-- Interests -->
-      <div id="interests" class="interests">
-        <div class="container">
-          <p class="title shadow text-center">Interests</p>
-          <hr/>
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-primary">
-                <div class="content">
-                  <p class="title">Web Development</p>
-                  <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <div class="content">
-                    <figure class="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/640x480.png">
-                    </figure>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-vertical is-8">
-              <div class="tile">
-                <div class="tile is-parent">
-                  <article class="tile is-child notification is-primary">
-                    <p class="title">Game Development</p>
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </article>
-                </div>
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child notification is-primary">
-                    <p class="title">Virtual Reality</p>
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </article>
-                  <article class="tile is-child notification is-primary">
-                    <p class="title">The Internet of Things</p>
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </article>
-                </div>
-              </div>
+            <div class="tile is-ancestor">
               <div class="tile is-parent">
                 <article class="tile is-child notification is-primary">
-                  <p class="title">Digital Forensics and Security</p>
-                  <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   <div class="content">
-                    <!-- Content -->
+                    <p class="title">Game Development</p>
+                    <p class="subtitle">Brandon has been playing, developing, and designing games for as long as he can remember. He enjoys the full stack; designing, coding, asset modeling, and sound engineering.
+                      <br>
+                      <br> Game development blends all of his interests. He gets to design and present information to the user. He can immerse the user in a game world via design or alternate reality. He can keep the user connected to their character
+                      using external apps and websites. Finally, in order to protect the user and maintain a fun atmosphere, he needs to be mindful of privacy and security issues.
+                      <h2 class="title-medium">Projects</h2> Symmetrics, SpaceJack, HoopsVR, Sudoku
+                      <br><br>
+                      <h2 class="title-medium">Relevant Tech</h2> Unity/C#, Gamemaker, RPG Maker, Unreal, Blender, FL Studio
+                    </p>
                   </div>
                 </article>
               </div>
+              <div class="tile is-vertical is-8">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-parent is-child notification is-primary">
+                      <p class="title">Front End / UX</p>
+                      <p class="subtitle">Brandon's particularly drawn here due to his interested in design and the user experience.</p>
+                      <h2 class="title-medium">Projects</h2>Personal website, Fashion De La Rosa website, Virtual WallPod Installer, Games
+                      <br><br>
+                      <h2 class="title-medium">Relevant Tech</h2> HTM5, CSS3, Javascript, Bootstrap, Bulma, jQuery
+                    </article>
+                    <article class="tile is-child notification is-primary">
+                      <p class="title">Application Security / Ethical Hacking / <br> Digital Forensics</p>
+                      <p class="subtitle">Brandon initially arrived in Computer Science because of his interest in digital forensics and investigation.</p>
+                      <h2 class="title-medium">Projects</h2>The Artifact Genome Project
+                      <br><br>
+                      <h2 class="title-medium">Relevant Tech</h2>bash, Kali Linux, Metasploit, Hydra, aircrack, XRY
+                    </article>
+                  </div>
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-primary">
+                      <p class="title">Virtual / Augmented Reality</p>
+                      <p class="subtitle">Games, professional training simulation, education, or presenting your product; VR and AR are only going to get bigger.</p>
+                      <h2 class="title-medium">Projects</h2>VRACMAN, Plant-It!
+                      <br><br>
+                      <h2 class="title-medium">Relevant Tech</h2> Unity/C#, Unreal, Blender, FL Studio, Stonefox VRTK, Daydream/Android
+                      </p>
+                    </article>
+                    <article class="tile is-child notification is-primary">
+                      <p class="title">The Internet of Things</p>
+                      <p class="subtitle">Using data to streamline daily routines is an inevitability he embraces. However, it also means we need to be aware of security and privacy concerns.</p>
+                      <h2 class="title-medium">Projects</h2>SensorView
+                      <br><br>
+                      <h2 class="title-medium">Relevant Tech</h2>C#.NET
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /Interests -->
+        <!-- /Interests -->
 
-      <!-- Contact -->
-      <br>
-      <div id="contact" class="contact">
-        <div class="container">
-          <h2 class="column title shadow padding-top">Get In Touch</h2>
-          <hr/>
-          <br>
+        <!-- Contact -->
+        <div id="contact" class="contact">
+          <div class="container">
+            <h2 class="column title shadow padding-top">Get In Touch</h2>
+            <hr/>
+            <br>
+          </div>
+          <div class="columns">
+            <div class="column is-4">
+              <div class="column">
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="column">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <div class="column">
+                <h4>BrandonKnieriem26@gmail.com</h4>
+              </div>
+            </div>
+            <!-- Phone -->
+            <div class="column">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <div class="column">
+                <h4>(860) 887-7354</h4>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="column">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="columns">
-          <div class="column is-4">
-            <div class="column">
-            </div>
-          </div>
-          <!-- Email -->
-          <div class="column">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <div class="column">
-              <h4>BrandonKnieriem26@gmail.com</h4>
-            </div>
-          </div>
-          <!-- Phone -->
-          <div class="column">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <div class="column">
-              <h4>(860) 887-7354</h4>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="column">
-            </div>
-          </div>
-        </div>
+        <!-- /Contact -->
       </div>
-      <!-- /Contact -->
 
       <!-- Footer -->
       <div id="footer" class="footer pad-section">
@@ -262,7 +321,8 @@
         </footer>
       </div>
       <!-- /Footer -->
-
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
       <script async="async" type="text/javascript" src="./js/script.js"></script>
   </body>
 

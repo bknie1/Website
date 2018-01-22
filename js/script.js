@@ -1,5 +1,5 @@
 hamburger();
-dropdown();
+removeActive();
 
 function hamburger() {
   // Hambuger Logic
@@ -10,8 +10,19 @@ function hamburger() {
       menu.classList.toggle('is-active');
     });
 
-  if (!burger.is.visible) {
-    burger.classList.toggle('is-active');
-    menu.classList.toggle('is-active');
-  }
+  try {
+    if (!burger.is.visible) {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    }
+
+    throw 'Error: Missing hamburger property.';
+  } catch (err) {}
+}
+
+function removeActive() {
+  var menu = document.querySelector('#navMenu');
+  menu.addEventListener('click', function () {
+    $('#navMenu').removeClass('is-active');
+  });
 }
