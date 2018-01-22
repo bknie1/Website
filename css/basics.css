@@ -20,7 +20,7 @@ br {
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
   text-align: center;
 }
 
@@ -129,12 +129,8 @@ hr {
 	padding-top: 50%;
 }
 
-.tile-left {
-  padding-left: 15%;
-}
-
-.tile-right {
-  padding-right: 15%;
+.tile .subtitle {
+    padding: .75rem 0;
 }
 
 .title {
@@ -143,12 +139,14 @@ hr {
   font-weight: bold;
 }
 
-.title-medium {
+.tile .title-medium {
+  color: white;
   font-size: 1.5em;
   font-weight: bold;
 }
 
 .title-small {
+  color: white;
   font-size: .75em;
   font-weight: bold;
 }
