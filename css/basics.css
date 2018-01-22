@@ -130,7 +130,7 @@ hr {
 }
 
 .tile .subtitle {
-    padding: .75rem 0;
+    padding: .5rem 0;
 }
 
 .title {
@@ -141,7 +141,7 @@ hr {
 
 .tile .title-medium {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
 }
 
