@@ -61,7 +61,7 @@ br {
 }
 
 .content {
-  padding-bottom: 50em;
+  padding-bottom: 5em;
   padding-left: .5em;
   padding-right: .5em;
   padding-top: 4.5em;
@@ -114,7 +114,7 @@ hr {
 }
 
 .landing {
-  padding-bottom: 50em;
+  padding-bottom: 10em;
 }
 
 .name {
