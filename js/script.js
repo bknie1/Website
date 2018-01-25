@@ -10,7 +10,6 @@ function hamburger() {
   burger.addEventListener('click', function () {
       burger.classList.toggle('is-active');
       menu.classList.toggle('is-active');
-      brand.classList.toggle('is-active');
     });
 
   try {
