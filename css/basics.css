@@ -112,6 +112,10 @@ hr {
   padding: 50%;
 }
 
+.landing {
+  padding-bottom: 50em;
+}
+
 .name {
   color: white;
   font-size: 5.0em;
