@@ -1,6 +1,8 @@
 hamburger();
 removeActive();
 
+//------------------------------------------------------------------------------
+
 function hamburger() {
   // Hambuger Logic
   var burger = document.querySelector('.navbar-burger');
@@ -22,9 +24,27 @@ function hamburger() {
   } catch (err) {}
 }
 
+//------------------------------------------------------------------------------
+
 function removeActive() {
   var menu = document.querySelector('#navMenu');
   menu.addEventListener('click', function () {
     $('#navMenu').removeClass('is-active');
   });
 }
+
+//------------------------------------------------------------------------------
+
+$(".site-container").css("margin-top", $(window).height() - $(".site-header").height());
+
+var icon = $(".home-sec-1-text");
+var $window = $(window);
+
+$window.scroll(function () {
+    var windowTop = $window.scrollTop();
+    var headerOffset = $(".site-header").offset().top;
+
+    if (windowTop >= headerOffset) {
+        icon.fadeTo('slow', 1);
+    }
+});
