@@ -60,11 +60,19 @@ br {
   width: 400px;
 }
 
+.contact-details {
+  font-size: 1.1em;
+}
+
 .content {
   padding-bottom: 5em;
   padding-left: .5em;
   padding-right: .5em;
   padding-top: 4.5em;
+}
+
+.fa {
+  font-size: 2em;
 }
 
 .footer {
