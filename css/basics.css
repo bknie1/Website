@@ -9,8 +9,8 @@ br {
 }
 
 .contact {
-  padding-bottom: 50%;
-  padding-top: 20%;
+  padding-bottom: 25em;
+  padding-top: 15em;
   text-align: center;
 }
 
@@ -76,14 +76,20 @@ hr {
   padding: 50%;
 }
 
+.landing {
+  padding-bottom: 25%;
+}
+
 .list li {
   font-size: .5em;
   padding-left: 0.5em;
 }
 
 .name {
+  color: white;
   font-size: 5.0em;
   font-weight: bold;
+  padding-top: 6em;
 }
 
 .navbar {
@@ -98,17 +104,9 @@ hr {
   color: white !important;
 }
 
-.padding-bottom {
-    padding-bottom: 25%;
-}
-
 .padded-content {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.padding-top {
-  padding-top: 25%;
+  padding-left: .5em;
+  padding-right: .5em;
 }
 
 .roles, .skills {
@@ -122,11 +120,6 @@ hr {
 	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4),
 				 0 8px 13px rgba(0, 0, 0, 0.1),
 				 0 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-.strong {
-	color: white;
-	padding-top: 50%;
 }
 
 .tile .subtitle {
