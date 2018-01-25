@@ -80,9 +80,9 @@ html, body {
       rgba(0, 0, 0, 0.5)
     ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed;
 
-  background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
+  background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
 }
 
 .hero .nav, .hero .is-success .nav {
