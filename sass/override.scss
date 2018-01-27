@@ -4,8 +4,13 @@
 
 // Set the initial variables
 $transparent: rgba(0, 0, 0, 0.75);
+$grey-transparent: rgba(175, 175, 175, .75);
+$invisible: rgba(0, 0, 0, 0);
 $cyan: $transparent;
+$blue: rgba(175, 175, 175, .75);
 $blue-invert: #fff;
+$link-focus-border: $invisible;
+$focus-border: $invisible;
 
 $family-serif: 'Roboto', sans-serif;
 
