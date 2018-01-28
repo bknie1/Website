@@ -4,6 +4,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src
+        'self' data:
+        https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+      ;
+
+      img-src
+        'self' data:
+        https://unsplash.it
+        https://picsum.photos/1200/900
+      ;
+
+      font-src
+        'self' data:
+        https://fonts.gstatic.com
+        https://fonts.googleapis.com
+        https://maxcdn.bootstrapcdn.com
+      ;
+
+      style-src
+        'self' data:
+        https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+        https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css
+        https://fonts.googleapis.com
+        https://fonts.gstatic.com
+      ;
+
+      script-src
+        'self'
+      ;
+     " />
+
     <title>Brandon Knieriem</title>
     <link rel="shortcut icon" type="image/x-icon" href="./resources/img/brand.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" script-src="">
