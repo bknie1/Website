@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', main(), true);
 function main() {
   hamburger();
   removeActive();
-  document.body.style.opacity = '1'; // Fade In
-  console.log('DOM fully loaded and parsed.');
+  fade();
 }
 
 //------------------------------------------------------------------------------
@@ -31,10 +30,16 @@ function hamburger() {
 
 //------------------------------------------------------------------------------
 function removeActive() {
-  var menu = document.querySelector('#navMenu');
+  var menu = document.querySelector('#items');
   menu.addEventListener('click', function () {
-    $('#navMenu').removeClass('is-active');
+    $('#items').removeClass('is-active');
   });
 }
 
 //------------------------------------------------------------------------------
+
+function fade() {
+  setTimeout(function () {
+    document.body.style.opacity = '1'; // Fade In
+  }, 750);
+}
