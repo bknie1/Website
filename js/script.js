@@ -1,8 +1,13 @@
-hamburger();
-removeActive();
+document.addEventListener('DOMContentLoaded', main(), true);
+
+function main() {
+  hamburger();
+  removeActive();
+  document.body.style.opacity = '1'; // Fade In
+  console.log('DOM fully loaded and parsed.');
+}
 
 //------------------------------------------------------------------------------
-
 function hamburger() {
   // Hambuger Logic
   var burger = document.querySelector('.navbar-burger');
@@ -25,7 +30,6 @@ function hamburger() {
 }
 
 //------------------------------------------------------------------------------
-
 function removeActive() {
   var menu = document.querySelector('#navMenu');
   menu.addEventListener('click', function () {
