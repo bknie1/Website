@@ -190,3 +190,11 @@ hr {
   height: 2em;
   margin: 10px auto;
 }
+
+.video-portfolio {
+  left: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
