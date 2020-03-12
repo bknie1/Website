@@ -1,0 +1,190 @@
+:root {
+    --base1: #EAE2D6; /* Linen */
+    --base2: #D5C3AA; /* Oyster */
+    --base3: #867666; /* Pewter */
+    --base4: #E1B80D; /* Lemon Tea */
+    --base5: #766656; /* Dark Pewter */
+    --base6: #564636; /* Darkest Pewter */
+    --black: black;
+
+    --bg: var(--base1);
+    --bg-alt: var(--base2);
+    --bg-nav: var(--base3);
+    --text: var(--black);
+    --text-hover: var(--base3);
+    --text-alt: var(--base1);
+    --text-hover-alt: var(--base2);
+    --pill-text: var(--base1);
+    --pill-primary-text: var(--base6);
+    --pill-primary-bg: var(--base4);
+    --pill-bg: var(--base6);
+    --pill-hover: var(--base5);
+    --accent1: var(--base3);
+    --accent2: var(--base4);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Nunito", sans-serif;
+}
+
+/* Navigation */
+
+@media screen and (max-width: 991px) {
+    #mainNavbar {
+        background: var(--bg-nav);
+    }
+}
+
+.navbar {
+    transition: background 0.25s;
+}
+
+.navbar.navbar-dark .navbar-brand {
+    color: var(--text);
+}
+
+.navbar.navbar-dark .navbar-brand:hover {
+    transition: 0.25s;
+    color: var(--text-hover);
+}
+
+.navbar.navbar-dark .nav-link.text-color {
+    color: var(--text);
+}
+
+.navbar.navbar-dark .nav-link.text-color:hover {
+    color: var(--text-hover);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    text-decoration: none;
+    background-color: var(--bg-alt);
+}
+
+a.badge-primary, a.badge-primary {
+    color: var(--pill-primary-text);
+    background-color: var(--pill-primary-bg);
+}
+
+a.badge-primary:focus, a.badge-primary:hover {
+    color: #fff;
+    background-color: var(--pill-hover);
+}
+
+a.badge-secondary, a.badge-secondary {
+    color: var(--text-alt);
+    background-color: var(--pill-bg);
+}
+
+a.badge-secondary:focus, a.badge-secondary:hover {
+    color: #fff;
+    background-color: var(--pill-hover);
+}
+
+a.badge {
+    font-weight: 400;
+}
+
+a.badge:focus, a.badge:hover {
+    text-decoration: none;
+}
+
+/* Navigation On Scroll */
+
+.navbar.scrolled {
+    background-color: var(--bg-nav);
+}
+
+.navbar.scrolled.navbar-dark .nav-link.text-color {
+    color: var(--text-alt);
+}
+
+.navbar.scrolled.navbar-dark .nav-link.text-color:hover {
+    color: var(--text-hover-alt);
+}
+
+.navbar.scrolled.navbar-dark .navbar-brand {
+    color: var(--text-alt);
+}
+
+.navbar.scrolled.navbar-dark .navbar-brand:hover {
+    color: var(--text-hover-alt);
+}
+
+.navbar-dark .navbar-nav .nav-link.text-color, .text-color {
+    color: var(--base-3);
+}
+
+/* /Navbar Scroll */
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-accent {
+    color: var(--accent1);
+}
+
+.text-accent2 {
+    color: var(--accent2);
+}
+
+.navbar, .navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar, .navbar .navbar-brand {
+        font-size: 1.4rem;
+    }
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    transition: 0.25s;
+}
+
+/* Images */
+img.has-drop-shadow {
+    -moz-box-shadow: 2px 2px 2px #999;
+    -webkit-box-shadow: 2px 2px 2px #999;
+    -ms-box-shadow: 2px 2px 2px #999;  
+}
+
+/* Logo Group */
+
+#logoGroup h1 {
+    font-weight: 100;
+}
+
+/* Blurbs */
+
+.content.alternate-bg {
+    background-color: var(--bg-alt);
+}
+
+.blurb h2, .blurb p {
+    /* color: white; */
+    font-weight: 100;
+}
+
+.blurb h2 {
+    /* color: white; */
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.blurb .fas {
+    color: var(--accent1);
+}
+
+.blurb p {
+    font-size: 1.125rem;
+    line-height: 2.0;
+}
