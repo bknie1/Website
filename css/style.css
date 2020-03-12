@@ -101,10 +101,6 @@ a.badge:focus, a.badge:hover {
     color: var(--text-alt);
 }
 
-.navbar.scrolled.navbar-dark .nav-link.text-color:hover {
-    color: var(--text-hover-alt);
-}
-
 .navbar.scrolled.navbar-dark .navbar-brand {
     color: var(--text-alt);
 }
@@ -114,10 +110,18 @@ a.badge:focus, a.badge:hover {
 }
 
 .navbar-dark .navbar-nav .nav-link.text-color, .text-color {
-    color: var(--base-3);
+    color: var(--text);
 }
 
-/* /Navbar Scroll */
+.navbar-dark .navbar-nav .nav-link.text-color:hover, .text-color:hover {
+    color: var(--text-hover);
+}
+
+.navbar.scrolled.navbar-dark .navbar-nav .nav-link.text-color:hover, .text-color:hover {
+    color: var(--text-hover-alt);
+}
+
+/* /Navbar On Scroll */
 
 .text-upper {
     text-transform: uppercase;
@@ -178,6 +182,11 @@ img.has-drop-shadow {
     /* color: white; */
     font-weight: 100;
     text-transform: uppercase;
+}
+
+.blurb h3 {
+    /* color: white; */
+    font-weight: 100;
 }
 
 .blurb .fas {

@@ -1,8 +1,14 @@
+var navbar = $("#mainNavbar");
+
 $( document ).ready(function() {
-  $(document).on("scroll", updateNavbarBackground);
+
+  if(window.innerWidth > 960) {
+    $(document).on("scroll", updateNavbarBackground);
+  } else {
+    navbar.addClass("scrolled");
+  }
 });
 
 function updateNavbarBackground() {
-  var navbar = $("#mainNavbar");
   navbar.toggleClass("scrolled", $(this).scrollTop() > navbar.height());
 }
