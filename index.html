@@ -1,369 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-    <!-- Google Chrome's Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="
-      default-src
-        'self' data:
-        https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-      ;
-
-      img-src
-        'self' data:
-        https://unsplash.it
-        https://picsum.photos/1200/900
-      ;
-
-      font-src
-        'self' data:
-        https://fonts.gstatic.com
-        https://fonts.googleapis.com
-        https://maxcdn.bootstrapcdn.com
-      ;
-
+<head>
+  <!-- Google Chrome's Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
       style-src
         'self' data:
-        https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-        https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css
+        https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+        https://use.fontawesome.com/releases/v5.1.1/css/all.css
         https://fonts.googleapis.com
         https://fonts.gstatic.com
       ;
 
       script-src
-        'self' 'unsafe-inline' 'unsafe-eval'
+        'self' data:
+        https://code.jquery.com/jquery-3.3.1.slim.min.js
+        https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+        https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
       ;
      " />
 
-    <title>Brandon Knieriem</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./resources/img/brand.ico" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-    <link rel="stylesheet" href="./css/basics.css">
-    <link rel="stylesheet" href="./css/override.css">
+  <title>Brandon Knieriem</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <body>
-    <!-- Navbar -->
-    <section="section" id="navbar" class="hero is-info is-fullheight">
-      <div class="hero-head">
-        <nav class="navbar is-fixed-top">
-          <div class="container">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
-            <!-- Brand -->
-            <div class="navbar-brand">
-              <a class="navbar-item brand" href="./index.html">
-                <img src="./resources/img/brand.png" alt="Logo">
-              </a>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-              <!-- Hamburger -->
-              <button class="button navbar-burger" data-target="navMenu">
-                <div>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </button>
-            </div>
-
-            <!-- Items -->
-            <div id="items" class="navbar-menu text-center">
-              <!-- Local Items -->
-              <div class="navbar-start delayed">
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    Projects
-                  </a>
-                  <!-- Not Games -->
-                  <div class="navbar-dropdown is-boxed">
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Distribution">
-                            Distribution
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/EgglishLanguageValidation">
-                            Programming Language Validation
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Mapboard">
-                            Mapboard
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/PLC_PTL">
-                            Mortise Lock Assembly PLC
-                          </a>
-                    <!-- Games -->
-                    <hr class="navbar-divider">
-                    <a class="navbar-item" target="_blank" href="https://bknie1.github.io/colorgame.html">
-                            Color Game
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/HoopsVR">
-                            HoopsVR
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Plant-It">
-                            Plant It!
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/SpaceJack">
-                            Space Jack
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Symmetrics">
-                            Symmetrics
-                          </a>
-                    <a class="navbar-item" target="_blank" href="https://github.com/bknie1/Sudoku">
-                            Sudoku
-                          </a>
-                  </div>
-                </div>
-                <a class="navbar-item basic-item" href="#about">
-                  <span>About</span>
-                </a>
-                <a class="navbar-item basic-item" href="#interests">
-                    <span>Interests</span>
-                  </a>
-                <a class="navbar-item basic-item" href="#contact">
-                    <span>Contact</span>
-                  </a>
-                <a class="navbar-item basic-item" href="./portfolio.html">
-                        <span>Video Portfolio</span>
-                  </a>
-                <a class="navbar-item basic-item" href="./resources/contact/Brandon Knieriem - Resume.pdf">
-                      <span>Resume</span>
-                    </a>
-
-              </div>
-              <!-- External Items -->
-              <div class="navbar-end">
-                <span class="work-item navbar-item">
-                    <a class="work button is-white is-outlined" target="_blank" href="https://github.com/bknie1">
-                      <span class="icon">
-                        <i class="fa fa-github"></i>
-                      </span>
-                <span>GitHub</span>
-                </a>
-                </span>
-                <span class="work-item navbar-item">
-                    <a class="work button is-white is-outlined" target="_blank" href="https://linkedin.com/in/brandonknieriem">
-                      <span class="icon">
-                        <i class="fa fa-linkedin"></i>
-                      </span>
-                <span>LinkedIn</span>
-                </a>
-                </span>
-                <span class="work-item navbar-item">
-                    <a class="work button is-white is-outlined" target="_blank" href="https://soundcloud.com/ghostlightproductions/sets/quick-mix">
-                      <span class="icon">
-                        <i class="fa fa-soundcloud"></i>
-                      </span>
-                <span>SoundCloud</span>
-                </a>
-                </span>
-              </div>
-            </div>
+<body>
+  <nav id="mainNavbar" class="navbar navbar-expand-lg py-0 fixed-top navbar-dark">
+    <a class="text-accent text-upper navbar-brand" href="#">
+      BK
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navLinks"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav mr-auto mt-0 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link text-upper text-color" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Portfolio -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-upper text-color" href="#" id="dropdownId" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Portfolio</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" target="_blank" href="./resources/resume/BrandonKnieriem-Web-Resume.pdf">Web Development Resume</a>
+            <a class="dropdown-item" target="_blank" href="./resources/resume/BrandonKnieriem-Games-Resume.pdf">Game Development Resume</a>
+            <a class="dropdown-item" href="https://drive.google.com/open?id=16kCLJV8hTql7Iks4vHAthDHVJcObMvBZ">athleteReg Portfolio (Google Drive ZIP)</a>
+            <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=IpxW6x8ueYw&list=PL7C04B2lmd7BhIxeOHdQ7_cQT7gc9OJlL">Pre-athleteReg YouTube Portfolio</a>
+            <a class="dropdown-item" target="_blank" href="https://www.github.com/bknie1">GitHub</a>
+            <a class="dropdown-item" target="_blank" href="https://www.soundcloud.com/ghostlightproductions">SoundCloud</a>
           </div>
-        </nav>
+        </li>
+        <!-- /Portfolio -->
+        <!-- Selected Works -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-upper text-color" href="#" id="dropdownId" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Projects</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="https://www.bikereg.com">AthleteReg 2018-2020 Redesign</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/PresentVR">PresentVR</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Distribution">Distribution
+              (Py3)</a>
+            <a class="dropdown-item" target="_blank"
+              href="https://github.com/bknie1/EgglishLanguageValidation">Programming Language Validation (Py3)</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Mapboard">Mapboard (Py3)</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/PLC_PTL">Mortise Lock Assembly
+              PLC</a>
+            <!-- Games -->
+            <hr class="navbar-divider">
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Symmetrics">Symmetrics</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Sudoku">Sudoku (C++)</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/SpaceJack">Space Jack</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Plant-It">Plant It!</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/pclevine/MuseVR">MuseVR</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/pclevine/VRACMAN">VRACMAN</a>
+            <a class="dropdown-item" target="_blank" href="https://bknie1.github.io/colorgame.html">Color Game</a>
+            <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/HoopsVR">HoopsVR</a>
+          </div>
+        </li>
+        <!-- /Selected Works -->
+      </ul>
+
+      <!-- External Items -->
+      <a class="badge badge-pill badge-secondary  text-color" target="_blank"
+        href="https://linkedin.com/in/brandonknieriem">
+        </i><span>LinkedIn</span>
+      </a>
+      <a class="badge badge-pill badge-primary text-color ml-3" target="_blank"
+        href="mailto:brandonknieriem26@gmail.com">
+        <span>Contact</span>
+      </a>
+      <!-- /External Items -->
+  </nav>
+
+  <!-- Landing -->
+  <section id="aboutSection" class="container-fluid">
+    <div class="row align-items-center content">
+      <div class="col-lg-6">
+        <div id="logoGroup" class="text-upper text-font-weight-light text-center d-none d-lg-block p-md-0">
+          <h1 class="text-center">Brandon<span class="text-accent2"> / </span>Knieriem
+        </div>
       </div>
-      </section>
-
-      <!-- Landing -->
-      <section id="name" class="section">
-        <div class="container landing">
-          <h1 class="name shadow">
-            Brandon Knieriem
-          </h1>
-          <h2 class="title shadow">
-            Software Engineer
-          </h2>
-        </div>
-      </section>
-      <!-- /Landing -->
-
-      <!-- Page Information/Content -->
-      <section id="information" class="section">
-        <!-- About -->
-        <div id="about" class="content">
-          <div class="container">
-            <p class="title shadow text-center">About</p>
-            <hr/>
-            <div class="tile is-ancestor">
-              <div class="tile is-vertical">
-                <div class="tile">
-                  <div class="tile is-parent">
-                    <article class="tile is-child notification is-primary">
-                      <h2 class="title">Who He Is</h2>
-                      <p class="subtitle">
-                        Proud member of the Oregon Trail generation, Brandon grew up in a small town in rural Connecticut.
-                        <br><br> He was enamored with technology at an early age. When he wasn't playing Commander Keen he tagged along to computer shows and local tech swap meets (re: piracy). Final Fantasy VII, VIII, and EverQuest inspired him to create
-                        his own games in RPG Maker.
-                        <br><br>In high school he learned Visual Basic, basic HTML, Flash, Adobe Photoshop. He also picked up digital and traditional photography. He was, and still is, an avid musician; guitar, bass, drums, synth, and more.
-                        <br><br>He took the long way in college: He started as an environmental engineer, then earned a Sociology B.A. with a concentration in Criminology, a Criminal Justice M.S., and finally a Computer Science M.S.
-                        <br><br>Hello, World!
-                      </p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="tile">
-                <div class="tile">
-                  <div class="tile is-parent is-vertical">
-                    <article class="tile is-child notification is-primary">
-                      <h2 class="title">What He Does</h2>
-                      <p class="subtitle">
-                        Brandon, first and foremost, loves design. Whether it's games, web development, the user experience, or an elegant code solution, he's looking for opportunities to be creative and make users happy. He has academically programmed for about three years.
-                        <br><br>Variety is the spice of life. Developing a game and need some 3D assets prototyped in Blender? Brandon enjoys wearing multiple hats.
-                      </p>
-                    </article>
-                    <div class="tile is-ancestor">
-                      <div class="tile is-vertical">
-                        <div class="tile">
-                          <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary list roles">
-                              <h2 class="title">Good Fits</h2>
-                              <li>Game Developer</li>
-                              <li>Game Designer</li>
-                              <li>UI Developer</li>
-                              <li>VR Developer</li>
-                              <li>Front End Web Developer</li>
-                              <li>Back End .NET Developer</li>
-                              <li>Mobile Developer</li>
-                              <li>App Security Engineer</li>
-                              <li>Digital Forensic Scientist</li>
-                            </article>
-                          </div>
-                          <div class="tile is-parent is-vertical">
-                            <article class="tile is-child notification is-primary list roles">
-                              <h2 class="title">Tech</h2>
-                              <li>Unity, Unreal, Gamemaker</li>
-                              <li>HTC Vive, Google Daydream</li>
-                              <li>Bootstrap, Bulma, Sass</li>
-                              <li>SQL, sqlite</li>
-                              <li>HTML5, CSS3, Javascript</li>
-                              <li>C++</li>
-                              <li>C#.NET</li>
-                              <li>Java & JavaFX</li>
-                              <li>Python</li>
-                            </article>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /About -->
-        <br>
-        <br>
-        <!-- Interests -->
-        <div id="interests" class="interests content">
-          <div class="container">
-            <p class="title shadow text-center">Interests</p>
-            <hr/>
-
-            <div class="tile is-ancestor">
-              <div class="tile is-parent">
-                <article class="tile is-child notification is-primary">
-                  <p class="title">Game Development</p>
-                  <p class="subtitle">Brandon has been playing, developing, and designing games for as long as he can remember. He enjoys the full stack of things to do; designing, coding, asset modeling, and sound engineering.
-                    <br>
-                    <br> Game development blends all of his interests. He gets to design and present information to the user. He can immerse the user in a game world via design or alternate reality. External apps and websites create opportunities for
-                    the user to stay connected. Finally, in order to protect the user and maintain a fun atmosphere, he needs to be mindful of privacy and security issues.
-                    <h2 class="title">Projects</h2> Symmetrics, SpaceJack, HoopsVR, Sudoku
-                    <br><br>
-                    <h2 class="title">Relevant Tech</h2> Unity/C#, Gamemaker, RPG Maker, Unreal, Blender, FL Studio
-                  </p>
-                </article>
-              </div>
-              <div class="tile is-vertical is-8">
-                <div class="tile">
-                  <div class="tile is-parent is-vertical">
-                    <article class="tile is-parent is-child notification is-primary">
-                      <p class="title">Front End / UX</p>
-                      <p class="subtitle">Brandon's particularly drawn here due to his interested in design and the user experience.</p>
-                      <h2 class="title">Projects</h2>Personal website, Fashion De La Rosa website, Virtual WallPod Installer, Games
-                      <br><br>
-                      <h2 class="title">Relevant Tech</h2> HTM5, CSS3, Javascript, Bootstrap, Bulma, jQuery
-                    </article>
-                    <article class="tile is-child notification is-primary">
-                      <p class="title">Application Security / Ethical Hacking / <br> Digital Forensics</p>
-                      <p class="subtitle">Brandon initially arrived in Computer Science because of his interest in digital forensics and investigation.</p>
-                      <h2 class="title">Projects</h2>The Artifact Genome Project
-                      <br><br>
-                      <h2 class="title">Relevant Tech</h2>bash, Kali Linux, Metasploit, Hydra, aircrack, XRY
-                    </article>
-                  </div>
-                  <div class="tile is-parent is-vertical">
-                    <article class="tile is-child notification is-primary">
-                      <p class="title">Virtual / Augmented Reality</p>
-                      <p class="subtitle">Games, professional training simulation, education, or presenting your product; VR and AR are only going to get bigger.</p>
-                      <h2 class="title">Projects</h2>HoopsVR, VRACMAN, Plant-It!
-                      <br><br>
-                      <h2 class="title">Relevant Tech</h2> Unity/C#, Unreal, Blender, FL Studio, Stonefox VRTK, Daydream/Android
-                      </p>
-                    </article>
-                    <article class="tile is-child notification is-primary">
-                      <p class="title">The Internet of Things</p>
-                      <p class="subtitle">Using data to streamline daily routines is an inevitability he embraces. However, it also means we need to be aware of security and privacy concerns.</p>
-                      <h2 class="title">Projects</h2>SensorView
-                      <br><br>
-                      <h2 class="title">Relevant Tech</h2>C#.NET
-                      </p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /Interests -->
-
-        <!-- Contact -->
-        <div id="contact" class="contact">
-          <div class="container">
-            <h2 class="column title shadow">Get In Touch</h2>
-            <hr/>
-            <br>
-          </div>
-          <div class="container contact-details">
-            <div class="columns">
-              <div class="column"></div>
-              <div class="column is-4">
-                <!-- Email -->
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <div class="column contact-details">
-                  <h4>BrandonKnieriem26@gmail.com</h4>
-                </div>
-              </div>
-              <div class="column is-4">
-                <!-- Phone -->
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <div class="column contact-details">
-                  <h4>1.860.884.0462</h4>
-                </div>
-              </div>
-              <div class="column"></div>
-            </div>
-          </div>
-        </div>
-        <!-- /Contact -->
-      </section>
-
-      <!-- Footer -->
-      <div id="footer" class="footer">
-        <footer>
-          <div class="container">
-            <hr/>
-            <p class="text-center">Copyright &copy; Brandon Knieriem 2017</p>
-          </div>
-        </footer>
+      <div class="col-lg-6 p-md-0">
+        <img class="img-fluid has-drop-shadow" src="resources/img/bg/egor-lyfar-dKUt8WBIVUU-unsplash.jpg" alt="">
       </div>
-      <!-- /Footer -->
-      <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-      <script async="async" type="text/javascript" src="./js/script.js"></script>
-  </body>
+    </div>
+
+    <div class="row align-items-center content alternate-bg">
+      <div class="col-md-6 order-2 order-md-1 p-md-0">
+        <img class="img-fluid has-drop-shadow" src="resources/img/bg/med-badr-chemmaoui-ZSPBhokqDMc-unsplash.jpg" alt="">
+      </div>
+      <div class="col-md-6 text-center order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb my-5 m-md-0 p-md-0">
+            <h2>Who I Am</h2>
+            <i class="fas fa-coffee fa-2x"></i>
+            <p class="lead">
+              An agile team leader that strives to create multimedia software experiences.
+              I thrive in artistic environments and progressive companies. 
+              I also ride bikes, make music, and play video games.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center content">
+      <div class="col-md-6 text-center order-1 order-md-2 p-md-0">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb my-5 mb-md-0 p-md-0">
+            <h2>What I Do</h2>
+            <i class="fas fa-lightbulb fa-2x"></i>
+            <p class="lead">
+              Web Development, Game Development, Virtual Reality, UX, and Design. On-site or remote. Independently or on a team of like-minded individuals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 d-none d-md-block p-md-0">
+        <img class="img-fluid has-drop-shadow" src="resources/img/bg/neonbrand-mlZzMow-CQw-unsplash.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="row align-items-center content alternate-bg">
+      <div class="col-md-6 order-1 order-md-1 p-md-0">
+        <img class="img-fluid has-drop-shadow" src="resources/img/bg/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
+      </div>
+      <div id="howWeDoIt" class="col-md-6 text-center order-2 order-md-2 ">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb my-5 mb-md-0 p-md-0">
+            <h2>How I Do It</h2>
+            <i class="fas fa-code fa-2x"></i>
+            <p class="lead">
+              I love my craft. I speak a few different languages, but take a beat to pivot between stacks. Tools of the trade include, but are not limited to, Visual Studio += Code, Unity, and the Adobe Creative Cloud.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
 
 </html>
