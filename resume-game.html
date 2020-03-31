@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Google Chrome's Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+      style-src
+        'self' data:
+        https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+        https://use.fontawesome.com/releases/v5.1.1/css/all.css
+        https://fonts.googleapis.com
+        https://fonts.gstatic.com
+      ;
+
+      script-src
+        'self' data:
+        https://code.jquery.com/jquery-3.3.1.slim.min.js
+        https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+        https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+      ;
+     " />
+
+  <title>Brandon Knieriem</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160601021-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-160601021-1');
+  </script>
+</head>
+
+<body>
+
+    <nav id="mainNavbar" class="navbar navbar-expand-lg py-0 fixed-top navbar-dark">
+        <a class="text-accent text-upper navbar-brand" href="/">
+          BK
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navLinks"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav mr-auto mt-0 mt-lg-0">
+            <!-- Resume -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-upper text-color" href="#" id="dropdownId" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Resume</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="/resume-fullstack.html">Full Stack Resume</a>
+                <a class="dropdown-item" href="/resume-game.html">Game/VR Resume</a>
+              </div>
+            </li>
+            <!-- /Resume -->
+            <!-- Portfolio -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-upper text-color" href="#" id="dropdownId" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Portfolio</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" target="_blank" href="https://drive.google.com/open?id=16kCLJV8hTql7Iks4vHAthDHVJcObMvBZ">athleteReg Portfolio (Google Drive ZIP)</a>
+                <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=IpxW6x8ueYw&list=PL7C04B2lmd7BhIxeOHdQ7_cQT7gc9OJlL">Project YouTube Portfolio</a>
+                <a class="dropdown-item" target="_blank" href="https://www.github.com/bknie1">GitHub</a>
+                <a class="dropdown-item" target="_blank" href="https://www.soundcloud.com/ghostlightproductions">SoundCloud</a>
+              </div>
+            </li>
+            <!-- /Portfolio -->
+            <!-- Selected Works -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-upper text-color" href="#" id="dropdownId" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Select Works</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="https://www.bikereg.com">AthleteReg 2018-2020 Redesign (Design, UX, Front End)</a>
+                <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/PresentVR">PresentVR (Professional Development)</a>
+                <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Distribution">Distribution
+                  (Py3)</a>
+                <a class="dropdown-item" target="_blank"
+                  href="https://github.com/bknie1/EgglishLanguageValidation">Programming Language Validation (Py3)</a>
+                <!-- Games -->
+                <hr class="navbar-divider">
+                <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Symmetrics">Symmetrics (Educational Game)</a>
+                <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Sudoku">Sudoku (C++)</a>
+                <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/SpaceJack">Space Jack (GML)</a>
+                <a class="dropdown-item" target="_blank" href="https://github.com/bknie1/Plant-It">Plant It! (VR)</a>
+                <a class="dropdown-item" target="_blank" href="https://bknie1.github.io/colorgame.html">Color Game (Web)</a>
+              </div>
+            </li>
+            <!-- /Selected Works -->
+          </ul>
+    
+          <!-- External Items -->
+          <a class="badge badge-pill badge-secondary text-color mb-3 mb-lg-0" target="_blank"
+            href="https://linkedin.com/in/brandonknieriem">
+            </i><span>LinkedIn</span>
+          </a>
+          <a class="badge badge-pill badge-primary text-color ml-3 mb-3 mb-lg-0" target="_blank"
+            href="mailto:brandonknieriem26@gmail.com">
+            <span>Contact</span>
+          </a>
+          <!-- /External Items -->
+      </nav>
+
+<section>
+    <div class="container mt-5 text-center">
+        <h1>Games and Virtual Reality Resume</h1>
+        <div class="iframe-container">
+          <iframe src="resources/resume/BrandonKnieriem-Games-Resume.pdf#zoom=75" width="100%" height="100%">
+          </iframe>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
